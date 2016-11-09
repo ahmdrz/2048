@@ -128,9 +128,6 @@ GameManager.prototype.moveTile = function (tile, cell) {
 
 // Move tiles on the grid in the specified direction
 GameManager.prototype.move = function (direction) {
-  var sound = document.getElementById("sound");
-  sound.play();
-    
   // 0: up, 1: right, 2: down, 3: left
   var self = this;
 
