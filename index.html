@@ -17,10 +17,13 @@
   <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
   <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">  
 </head>
 
 <body>
+  <audio id="sound">
+    <source src="style/media/16977_1461335346.mp3" type="audio/mpeg">
+  </audio>
   <div class="container">
     <div class="heading">
       <h1 class="title">2048</h1>
@@ -32,7 +35,7 @@
 
     <div class="above-game">
       <a class="restart-button">بازی مجدد</a>
-      <p class="game-intro">کاشی ها رو بهم بچسبون تا ۲۰۴۸ درست بشه</p>
+      <p class="game-intro">کاشی ها رو بهم بچسبون تا ۲۰۴۸ درست بشه</p>      
     </div>
 
     <div class="game-container">
@@ -41,7 +44,6 @@
         <div class="lower">
           <a class="keep-playing-button">ادامه بده</a>
           <a class="retry-button">دوباره</a>
-          <a class="retry-button" onclick="TelegramGameProxy.shareScore()">ثبت رکورد</a>
         </div>
       </div>
 
@@ -88,7 +90,7 @@
   <script src="js/local_storage_manager.js"></script>
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
-  <script src="https://telegram.org/js/games.js"></script>
+  <script src="js/telegram.js"></script>
 </body>
 
 </html>

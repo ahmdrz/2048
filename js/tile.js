@@ -8,7 +8,7 @@ function Tile(position, value) {
 }
 
 Tile.prototype.savePosition = function () {
-  this.previousPosition = { x: this.x, y: this.y };
+  this.previousPosition = { x: this.x, y: this.y };  
 };
 
 Tile.prototype.updatePosition = function (position) {
