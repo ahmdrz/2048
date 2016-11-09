@@ -679,7 +679,7 @@ hr {
 }
 
 .game-intro {
-  float: left;
+  float: right;
   line-height: 42px;
   margin-bottom: 0;
 }
@@ -696,6 +696,20 @@ hr {
   display: block;
   text-align: center;
   float: left;
+}
+
+.submit-button {
+  display: inline-block;
+  background: #8f7a66;
+  border-radius: 3px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #f9f6f2;
+  height: 40px;
+  line-height: 42px;
+  display: block;
+  text-align: center;
+  float: right;
 }
 
 .game-explanation {
@@ -731,7 +745,7 @@ hr {
     display: block;
     box-sizing: border-box;
     line-height: 1.65;
-    font-size: 13px;
+    font-size: 12px;
   }
   .restart-button {
     width: 42%;
